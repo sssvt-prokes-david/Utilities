@@ -7,7 +7,7 @@ namespace UtilitiesDraw.BusinessObjects.HouseBuilding
 
 
 
-    public class Door
+    public class Door : BuildingElement
     {
 
 
@@ -84,26 +84,26 @@ namespace UtilitiesDraw.BusinessObjects.HouseBuilding
             return door;
         }
 
-        //public override void DrawSelf(Graphics g, CanvasContext context)
-        //{
-        //    int doorHeight = 250;
-        //    int doorWidth = 150;
-        //    int innerRectangleHeight = 100;
-        //    int innerRectangleWidth = 100;
-        //    int doorHandleHeight = 5;
-        //    int doorHandleWidth = 30;
-        //    Rectangle door = new Rectangle(context.Left + 50, context.Height - doorHeight + 20, doorWidth, doorHeight);
-        //    Rectangle doorInnerRectangle = new Rectangle(door.Left + 25, context.Height - doorHeight + 40, innerRectangleWidth, innerRectangleHeight);
-        //    Rectangle doorHandle = new Rectangle(door.Left + 15, context.Height - doorHeight + 150, doorHandleWidth, doorHandleHeight);
+        public override void DrawSelf(Graphics g, CanvasContext context)
+        {
+            int doorHeight = 250;
+            int doorWidth = 150;
+            int innerRectangleHeight = 100;
+            int innerRectangleWidth = 100;
+            int doorHandleHeight = 5;
+            int doorHandleWidth = 30;
+            Rectangle door = new Rectangle(context.Left + 50, context.Height - doorHeight + 20, doorWidth, doorHeight);
+            Rectangle doorInnerRectangle = new Rectangle(door.Left + 25, context.Height - doorHeight + 40, innerRectangleWidth, innerRectangleHeight);
+            Rectangle doorHandle = new Rectangle(door.Left + 15, context.Height - doorHeight + 150, doorHandleWidth, doorHandleHeight);
 
-        //    using (Pen pen = new Pen(Color.Black, 2.0f))
-        //    {
-        //        g.DrawRectangle(pen, door);
-        //        g.DrawRectangle(pen, doorInnerRectangle);
-        //        g.DrawRectangle(pen, doorHandle);
+            using (Pen pen = new Pen(Color.Black, 2.0f))
+            {
+                g.DrawRectangle(pen, door);
+                g.DrawRectangle(pen, doorInnerRectangle);
+                g.DrawRectangle(pen, doorHandle);
 
-        //    }
-        //}
+            }
+        }
 
     }
 

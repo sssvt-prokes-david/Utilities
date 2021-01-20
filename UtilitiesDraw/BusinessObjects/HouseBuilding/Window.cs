@@ -95,13 +95,13 @@ namespace UtilitiesDraw.BusinessObjects.HouseBuilding
                 g.DrawLine(pen, window.Left, window.Top + 100, window.Right, window.Top +100);
                 g.DrawLine(pen, window.Left + 100, window.Top, window.Left + 100, window.Bottom);
             }
-            Rectangle window2 = new Rectangle(context.Left + 100, context.Height - 225, widowWidth, windowHeight);
-            using (Pen pen = new Pen(Color.Black, 2.0f))
-            {
-                g.DrawRectangle(pen, window2);
-                g.DrawLine(pen, window2.Left, window2.Top + 100, window2.Right, window2.Top + 100);
-                g.DrawLine(pen, window2.Left + 100, window2.Top, window2.Left + 100, window2.Bottom);
-            }
+        //    Rectangle window2 = new Rectangle(context.Left + 100, context.Height - 225, widowWidth, windowHeight);
+        //    using (Pen pen = new Pen(Color.Black, 2.0f))
+        //    {
+        //        g.DrawRectangle(pen, window2);
+        //        g.DrawLine(pen, window2.Left, window2.Top + 100, window2.Right, window2.Top + 100);
+        //        g.DrawLine(pen, window2.Left + 100, window2.Top, window2.Left + 100, window2.Bottom);
+        //    }
         }
 
     }

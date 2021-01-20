@@ -98,6 +98,9 @@ namespace UtilitiesDraw
             CanvasContext context2 = new CanvasContext(panelCanvas.ClientRectangle.Left, panelCanvas.ClientRectangle.Top, panelCanvas.ClientRectangle.Width, panelCanvas.ClientRectangle.Height);
             window.DrawSelf(g, context2);
 
+            Door door = Door.GetSingleDoor();
+            door.DrawSelf(g, context);
+
             //Floor floor = Floor.GetGroundFloor();
             ////Floor floor = Floor.GetFirstFloor();
             //CanvasContext context = new CanvasContext(panelCanvas.ClientRectangle.Left, panelCanvas.ClientRectangle.Top, panelCanvas.ClientRectangle.Width, panelCanvas.ClientRectangle.Height);
